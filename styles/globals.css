@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-dark mx-auto border-solid;
+}
+
+.btn {
+  @apply font-semibold py-4 px-6 outline-none bg-success bg-opacity-10 border-2 text-success
+  rounded-xl border-primary  items-center justify-center cursor-pointer hover:bg-opacity-100 hover:text-white
+  transition;
+}
+
