@@ -7,12 +7,12 @@ export default function ItemNav({ name, addClassName, to }) {
     <>
       <Link href={to}>
         <a
-          className={`py-10 hover:border-b-2 hover:border-primary transition ${
+          className={`py-10 hover:border-b-2 hover:border-primary ${
             addClassName == "btn" ? "btn" : ""
           } ${
             router.asPath === to
-              ? "active:opacity-100 active:border-b-2 active:border-primary"
-              : "text-slate-400 hover:text-white"
+              ? "active:opacity-100 border-b-2 border-primary"
+              : "text-slate-400 hover:text-white transition"
           }`}
         >
           {name}
